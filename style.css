@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: monospace;
+    background-color: #080808;
+    color: #FFDE42;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6; /* Melhora a leitura dos parágrafos */
+}
+
+h1, h2, a {
+    font-family: "Press Start 2P", monospace;
+}
+
+.container {
+    border: 2px solid #3f3e3a;
+    margin: 40px auto;
+    width: 90%;
+    max-width: 700px;
+    padding: 20px;
+    background-color: #313E17;
+}
+
+/* FORMATAÇÃO DAS IMAGENS */
+img {
+    width: 200px;                   
+    height: 150px;
+    background-color: black;                
+    object-fit: contain;              
+}
+
+/* CORRIGIDO: Agora alinha as imagens lado a lado na horizontal */
+.img-container {
+    display: flex;       /* <-- Elemento crucial para alinhar na horizontal */
+    justify-content: center; 
+    gap: 10px;           /* Dá um espaço organizado entre cada imagem */
+    margin: 20px auto;
+    width: fit-content;
+    /* Dica: Você pode remover o background-color: red; quando tudo estiver alinhado */
+    background-color: red; 
+}
+
+/* LISTAS E LINKS DA PÁGINA INICIAL */
+li {
+    border: 2px solid #494845;
+    padding: 10px;
+    margin: 10px;
+    list-style: none;
+    transition: all 0.3s ease; /* MELHORIA: Deixa a subida do botão suave */
+}
+
+li:hover {
+    border: 2px solid #FFDE42;
+    transform: translateY(-5px); /* Faz o card do jogo subir suavemente */
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* BOTÃO DE VOLTAR REESTRUTURADO */
+.link-voltar {
+    display: inline-block; /* Garante que o espaçamento do botão funcione */
+    border: 2px solid #FFDE42; /* Sintaxe de borda padronizada */
+    color: white;
+    padding: 10px 15px;    /* Dá uma área de clique melhor para o botão */
+    margin-top: 15px;
+    font-size: 12px;       /* Ajusta a fonte pixelada que costuma ser muito grande */
+    transition: background-color 0.2s, color 0.2s; /* Suaviza a troca de cor */
+}
+
+.link-voltar:hover {
+    background-color: white;
+    color: black;
+}
